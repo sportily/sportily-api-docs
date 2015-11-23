@@ -4,7 +4,7 @@ In Sportily, `fixture_entry` instances are permitted to have `null` as the value
 
 ## Supported rules
 
-This section covers the different dynamic fixture rules that are supported, including details of the trigger events that will case the rules to be evaluated.
+This section covers the different dynamic fixture rules that are supported, including details of the trigger events that will cause the rules to be evaluated.
 
 ### Winner of another fixture
 
@@ -16,6 +16,10 @@ The fixture entry will be one of two possible entries, dependant upon which entr
 }
 ```
 
+#### Trigger
+
+This rule is resolved when the fixture with ID of `<fixture-id>` is marked as complete.
+
 ### Loser of another fixture
 
 ```
@@ -23,6 +27,10 @@ The fixture entry will be one of two possible entries, dependant upon which entr
   "loser_of": <fixture-id>
 }
 ```
+
+#### Trigger
+
+This rule is resolved when the fixture with ID of `<fixture-id>` is marked as complete.
 
 ### Position in another division
 
@@ -34,3 +42,7 @@ The fixture entry will be one of two possible entries, dependant upon which entr
   }
 }
 ```
+
+#### Trigger
+
+This rule is resolved when the division with ID of `<division-id>` is marked as complete.
