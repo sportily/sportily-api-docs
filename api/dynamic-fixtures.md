@@ -6,39 +6,33 @@ In Sportily, `fixture_entry` instances are permitted to have `null` as the value
 
 The fixture entry will be one of two possible entries, dependant upon which entry wins some other fixture, identified in the example below as `<fixture-id>`. This rule is useful during a knockout stage of a tournament, when the winner of each fixture proceeds through to the next round.
 
-```
+```json
 {
-  "winner_of": <fixture-id>
+  "winner_of": "<fixture-id>"
 }
 ```
-
-### Trigger
 
 This rule is resolved when the fixture with ID of `<fixture-id>` is marked as complete.
 
 ## Loser of another fixture
 
-```
+```json
 {
-  "loser_of": <fixture-id>
+  "loser_of": "<fixture-id>"
 }
 ```
-
-### Trigger
 
 This rule is resolved when the fixture with ID of `<fixture-id>` is marked as complete.
 
 ## Position in another division
 
-```
+```json
 {
   "division_position": {
-    "division_id": <division_id>,
-    "position": <position>
+    "division_id": "<division_id>",
+    "position": "<position>"
   }
 }
 ```
-
-### Trigger
 
 This rule is resolved when the division with ID of `<division-id>` is marked as complete.

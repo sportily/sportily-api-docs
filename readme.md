@@ -1,10 +1,12 @@
-# Sportily Documentation
+# Sportily
+
+Sportily is a web service for managing sports leagues. All of the Sportily functionality is accessible to developers via a public API, secured with OAuth 2.
 
 ## API
 
-* [Dynamic Fixtures](dynamic-fixtures.md)
-* [Member Warnings](member-warnings.md)
+* [Dynamic Fixtures](api/dynamic-fixtures.md)
+* [Member Warnings](api/member-warnings.md)
 
 ## Implementation
 
-* [Permissions](permissions.md)
+* [Permissions](implementation/permissions.md)
