@@ -33,3 +33,43 @@
 1. What happens if multiple transactions are created with the same token?
 2. What happens when the user pays more fees at a later date?
 3. What if the user then wants to pay fees with a different card?
+
+## Data structures
+
+### Providers
+
+URL: `/users/{id}/providers/{provider}` (e.g. `/users/42/providers/stripe`)
+
+Payload:
+
+```json
+{
+  "id": "stripe",
+  "token": "cust_...",
+  "cards": {
+    "data": [
+      {
+        "id": <sportily generated ID>
+        "token": "card_..."
+        ...
+      },
+      {}
+    ]
+  }
+}
+```
+
+### Cards
+
+URL: `/users/{id}/providers/{provider}/cards`
+
+Payload:
+
+```json
+{
+  "id": "stripe",
+  "token": "card_...",
+}
+```
+
+
