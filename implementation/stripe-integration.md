@@ -49,9 +49,8 @@ Payload:
   "cards": {
     "data": [
       {
-        "id": <sportily generated ID>
+        "id": "<sportily generated ID>",
         "token": "card_..."
-        ...
       },
       {}
     ]
@@ -68,7 +67,7 @@ Payload:
 ```json
 {
   "id": "stripe",
-  "token": "card_...",
+  "token": "card_..."
 }
 ```
 
