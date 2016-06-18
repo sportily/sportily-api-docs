@@ -25,7 +25,7 @@
 
   ```json
   {
-    "id": "<sportily-generated-id>"
+    "id": "<sportily-generated-id>",
     "provider": "stripe",
     "provider_id": "card_...",
     "provider_token": "tok_...",
