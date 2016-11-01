@@ -6,6 +6,7 @@ Sportily is a web service for managing sports leagues. All of the Sportily funct
 
 * [Dynamic Fixtures](api/dynamic-fixtures.md)
 * [Member Warnings](api/member-warnings.md)
+* [Stats](api/stats.md)
 
 ## Implementation
 

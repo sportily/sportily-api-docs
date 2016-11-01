@@ -2,13 +2,13 @@
 
 This document describes how permissions are defined in the Sportily API project.
 
-### Architecture
+## Architecture
 
 To do...
 
-### Defining permissions
+## Defining permissions
 
-#### Individual actions
+### Individual actions
 
 Each permission rule consists of:
 
@@ -26,7 +26,7 @@ $allow('read', 'Team', function($entity) use($role) {
 
 Here, the user is being granted access to retrieve an individual team, but only if the user belongs to that team.
 
-#### Create, read, update, delete
+### Create, read, update, delete
 
 When defining administrator roles, it's helpful to be able to great access to all of the CRUD operations in one go. To support this, a `crud` alias has been setup.
 
@@ -40,7 +40,7 @@ $allow('read', 'Season', function($entity) use($role) {
 
 Here, the user is being granted access to create new seasons, retrieve seasons, update existing seasons, and delete seasons, but only if seasons that belong to an organisation the user is an administrator at.
 
-#### Filtering collections
+### Filtering collections
 
 The `index` action is reserved for listing and filtering collections. When defining rules for this action, the `$allow` function supports two argument types. If the third argument is a function then it is called as normal, with an instance of `FilterQuery` passed in. The `FilterQuery` represents all of the filter arguments passed in the request query string.
 
