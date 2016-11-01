@@ -24,7 +24,7 @@ Endpoint: `GET /stats/top-scorers`
         "points": 5
       }
     }, {
-      /* ... */
+
     }
   ]
 }
@@ -50,7 +50,7 @@ Endpoint: `GET /stats/top-goalkeepers`
         "clean_sheets": 1
       }
     }, {
-      /* ... */
+
     }
   ]
 }
@@ -77,7 +77,7 @@ Endpoint: `GET /stats/team-standings`
         "points": 3
       }
     }, {
-      /* ... */
+
     }
   ]
 }
